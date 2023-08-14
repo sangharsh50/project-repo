@@ -1,0 +1,759 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    /* color: rgb(156, 116, 28); */
+    color: rgb(35, 35, 85);
+}
+
+span {
+    font-size: .9rem;
+    color: #757373;
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+/* navigation */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+}
+
+nav img {
+    width: 50px;
+    cursor: pointer;
+}
+
+nav .heading {
+    font-size: 20px;
+    font-weight: 700;
+   
+}
+
+nav .navigation {
+    display: flex;
+}
+
+#menu-btn {
+    width: 30px;
+    height: 35px;
+}
+
+nav .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .navigation ul li a{
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+nav .navigation a.active {
+    color: rgb(207, 207, 24);
+}
+
+nav .navigation ul li a:hover {
+    color: rgb(207, 207, 24);
+}
+
+/* home */
+#home {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("images/bg3.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+#home h2 {
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#home p {
+    color: white;
+    width: 50%;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+#home .btn {
+    margin-top: 30px;
+}
+
+#home a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+
+
+#home a.yellow {
+    color: white;
+    background: rgb(156, 116, 28);
+    transition: 0.3s ease;
+}
+
+#home a.yellow:hover {
+    cursor: pointer;
+    color: rgb(21, 21, 100);
+    background-color: white;
+}
+
+/* courses */
+#course {
+    padding: 8vw 8vw 8vw 8vw;
+    text-align: center;
+}
+
+#course .course-box {
+
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+    height: 350px;
+    padding: 0px 40px;
+}
+
+#course .courses {
+    text-align: start;
+    background-color: #F9F9FF;
+    height: 100%;
+}
+#course .courses a {
+    width: 220px;
+    padding: 5px 8px;
+}
+#course .courses a.blue {
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    background: rgb(21, 21, 100);
+    transition: 0.3s ease;
+    font-size: small;
+}
+#course .courses .btn{
+    margin-top: 8px;
+}
+#course .courses a.blue:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(44, 44, 218);
+}
+#course .courses img {
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+}
+
+#course .courses .details {
+    padding: 15px 15px 0px 15px;
+}
+
+/* registration */
+
+#registration {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("images/bgr.jpg");
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    /* padding-top: 40px; */
+    padding: 8vw 8vw 8vw 8vw;
+    margin-top: 300px;
+}
+
+
+#registration .text .om {
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    width: 40%;
+    opacity: 50%;
+    text-align: left;
+    padding: 40px 80px;
+    width: 100%;
+}
+
+
+
+#registration .text .para {
+    color: white;
+    font-size: 0.9rem;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    padding: 20px;
+}
+
+
+#registration .form {
+    background-color: transparent;
+    color: white;
+    padding: 40px;
+}
+
+#registration .form input {
+    padding: 10px 10px;
+    outline: none;
+    margin: 5px 5px;
+    border: 1px solid rgb(21, 21, 100);
+}
+
+#registration a.blue {
+    color: white;
+    background: rgb(156, 116, 28);
+    transition: 0.3s ease;
+}
+
+#registration a.blue:hover {
+    cursor: pointer;
+    color: rgb(21, 21, 100);
+    background-color: white;
+}
+
+#registration a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: white;
+    font-weight: 400;
+    border-radius: 5px;
+    padding-top: 10px;
+}
+
+#registration .btn {
+    margin-top: 20px;
+}
+
+/* team */
+
+#team {
+
+    padding: 8vw 8vw 8vw 8vw;
+    text-align: center;
+}
+
+#team .member-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+    padding: 0px 40px;
+
+}
+
+#team .members {
+    margin-top: 10px;
+    background-color: #F9F9FF;
+}
+
+#team .members img {
+    width: 80%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+
+}
+
+#team .members {
+
+    padding: 30px 10px;
+
+}
+
+.pro-links {
+    margin-top: 10px;
+}
+
+.pro-links i {
+    padding: 10px 13px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.pro-links i:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* footer */
+footer {
+    padding: 8vw 4vw 8vw 4vw;
+    background-color: rgb(235, 212, 107);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    flex-wrap: wrap;
+    height: auto;
+}
+
+footer .footer-col {
+    padding-bottom: 40px;
+}
+
+footer h3 {
+    color: black font-weight:600;
+    padding-bottom: 20px;
+}
+
+footer li {
+    list-style: none;
+    padding: 7px 0;
+    color: rgb(10, 8, 10);
+    ;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+footer li:hover {
+    color: rgb(49, 49, 112)
+}
+
+footer p {
+    color: rgb(10, 8, 10);
+    font-size: 15px;
+}
+
+footer .register {
+    margin-top: 20px;
+}
+
+footer input {
+    width: 220px;
+    padding: 15px 12px;
+    border: none;
+    outline: none;
+    color: rgb(233, 197, 153);
+
+}
+
+footer .register a {
+    width: 220px;
+    padding: 13px 8px;
+}
+
+footer .register a.blue {
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    background: rgb(21, 21, 100);
+    transition: 0.3s ease;
+    font-size: small;
+}
+
+footer .register a.blue:hover {
+    cursor: pointer;
+    color: rgb(21, 21, 100);
+    background-color: rgb(235, 212, 107);
+}
+
+footer .copyright {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+}
+
+@media (max-width:769px) {
+    nav {
+        padding: 15px 15px;
+    }
+
+    #home {
+        padding-top: 300px;
+    }
+
+    #course {
+        padding: 10vw 2vw 4vw 2vw;
+    }
+
+    #registration {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #registration .text .om {
+        padding: 0px 100px;
+    }
+
+    #registration .text .para {
+
+        width: 100%;
+        padding: 19px;
+    }
+
+    #registration .form {
+
+        flex-direction: column;
+        margin-top: 160px;
+
+    }
+
+}
+
+/* about */
+#about-home {
+    background-image: linear-gradient(rgba(9, 5, 4, 0.3), rgba(5, 4, 6, 0.7)), url("images/about.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+
+/* about gallery container */
+
+#about-container{
+    padding: 8vw 2vw 8vw 2vw;
+}
+#about-container .about-img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+   
+}
+.about-img img{
+    max-width: 290px;
+    margin: 10px;
+    
+}
+.text-col{
+    width: 40%;
+    margin-top: 60px;
+
+}
+ .image-col{
+    width: 60%;
+    
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+/* blogs */
+#about-blogs {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("images/blog.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+#blog-container{
+    padding: 8vw 8vw 8vw 8vw;
+}
+#blog-container{
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#blog-container .blogs{
+    width: 60%;
+}
+#blog-container .categories{
+    width: 30%;
+}
+#blog-container .blogs img{
+    width: 100%;
+    height: 0%;
+    border-radius: 20px;
+}
+#blog-container .blogs .post h3{
+   padding: 1.2vw 0 .3vw 0;
+}
+#blog-container .blogs .post p{
+    padding: 0 0 15px 0;
+ }
+#blog-container .post a {
+    width: 220px;
+    padding: 10px 8px;
+}
+#blog-container .post{
+    padding-bottom: 40px;
+}
+#blog-container .post a.blue {
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    background: rgb(21, 21, 100);
+    transition: 0.3s ease;
+    font-size: small;
+}
+
+#blog-container .post a.blue:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(44, 44, 218);
+}
+#blog-container .categories h2{
+    padding-bottom: 10px;
+}
+#blog-container .categories a{
+   text-decoration: none;
+   color: #757373;
+   padding: 10px;
+   line-height: 35px;
+   font-weight: 500;
+}
+#blog-container .blog1{
+    width: 60%;
+    margin: 0 auto;
+}
+#blog-container .blog1 p{
+    text-align: justify;
+    padding-bottom: 60px !important;
+}
+
+/* classes */
+#about-classes {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("images/bg2.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+#classend{
+    padding-top: 700px;
+}
+/* class1 */
+
+#course .course1{
+    width: 60%;
+    margin: 0 auto;
+    background-color: white ;
+}
+#course .course1 p{
+    text-align: justify;
+    padding-bottom: 20px !important;
+
+}
+#course .course1 .instructor img{
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+  width: 75px;
+  height: 75px;
+  
+}
+#course .course1 .instructor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 31%;
+}
+#course .course1 .instructor h4{
+    padding-top: 15px;
+}
+#course .course1 img{
+    border-radius: 20px;
+}
+#course .course1 .overview{
+    margin-top: 20px;
+}
+#course .course1 .overview h3{
+    padding-top: 15px;
+}
+#course .course1 .overview p{
+    padding-top: 5px;
+}
+
+#course .course1 .btn {
+    margin-top: 30px;
+}
+
+#course .course1 a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+
+
+#course .course1 a.yellow {
+    color: white;
+    background: rgb(156, 116, 28);
+    transition: 0.3s ease;
+}
+
+#course .course1 a.yellow:hover {
+    cursor: pointer;
+    color: rgb(21, 21, 100);
+    background-color:rgb(207, 157, 48);
+}
+
+/* contact */
+#about-contact{
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("images/classes.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+#heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+#contact{
+    padding: 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#contact .getin{
+    width: 350px;
+}
+#contact .getin h2{
+    color: black;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: .8;
+    margin-bottom: 16px;
+}
+#contact .getin p{
+    color: rgb(32, 22, 22);
+   
+    line-height: 24px;
+    padding-bottom: 15px;
+    margin-bottom: 33px;
+    border-bottom: 1px solid rgb(153, 145, 145);
+}
+#contact .getin h3{
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+#contact .getin .getin-details div{
+    display: flex;
+}
+#contact .getin .getin-details div .get{
+    font-size: 16px;
+    line-height: 22px;
+    color: #5838fc;
+    margin-right: 20px;
+}
+#contact .getin .getin-details div p{
+    font-size: 14px;
+    border-bottom: none;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+#contact .getin .getin-details div .pro-links i{
+    margin-right: 8px;
+}
